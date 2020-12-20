@@ -22,6 +22,8 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Lora&family=Montserrat:wght@300&display=swap" rel="stylesheet">
 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <title>Devchallenges</title>
@@ -49,17 +51,24 @@
       }
 
       li {
-        margin-bottom: 8px;
+        list-style: none;
+
+      }
+
+      li a
+      {
+        text-decoration: none;
       }
 
       .welcome {
+        display: flex;
+        flex-direction: column;
         max-width: 800px;
         margin: 0 1em;
       }
 
       .welcome-text {
-        margin-top: 12vh;
-        font-weight: 500;
+        margin-top: 2vh;
       }
 
       .welcome-text p {
@@ -117,11 +126,18 @@
         display: none;
         overflow: hidden;
         background-color: #181719;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 22px;
+        letter-spacing: 0em
 
       }
 
       .read-m
       {
+        display: flex;
         font-family: Montserrat;
         font-style: normal;
         font-weight: 600;
@@ -132,12 +148,245 @@
 
       .main-image
       {
-        margin-top: 25px;  
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        z-index: -100;
+        margin-top: 30px;  
       }
 
       .main-image img
       {
         width: 100%;
+        z-index: -100;
+      }
+
+      .card
+      {
+        position: relative;
+        width: 300px;
+        height: 138px;
+        top: -36px;
+        padding: 20px;
+        z-index: 100;
+        background-color: #181719;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      }
+
+      .identifier
+      {
+        display: flex;
+        align-items: center;
+      }
+
+      .profile
+      {
+        display: contents;
+      }
+
+      .text-div
+      {
+        margin-left: 10px;
+      }
+
+      .profile img
+      {
+        width: 13%;
+        border-radius: 50%;
+      }
+
+      .d-name
+      {
+        font-family: Montserrat;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 15px;
+        letter-spacing: 0em;
+      }
+
+      .role
+      {
+        font-family: Montserrat;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 12px;
+        letter-spacing: 0em;
+      }
+
+      .credits
+      {
+        margin-top: 20px;
+      }
+
+      .credits p
+      {
+        font-family: Lora;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 23px;
+        letter-spacing: 0em;
+        text-align: left;
+        padding-bottom: 35px; 
+      }
+
+      .footer
+      {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .line
+      {
+        width: 75%;
+        border-top: 1px solid #A9A9A9;
+      }
+
+
+      footer
+      {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 3vh; 
+        padding-top: 10px;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 17px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: #A9A9A9;
+        
+      }
+
+      @media screen and (min-width: 768px)
+      {
+        .welcome
+        {
+          flex-direction: row;
+          margin: 0 4em;
+          padding: 4em;
+          max-width: 100%;
+        }
+
+        nav .links
+        {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+        }
+
+        nav
+        {
+          padding: 1em 5.2em;
+        }
+
+        nav .links li
+        {
+          margin: 1em 2.8em;
+        }
+
+        nav .icon
+        {
+          display: none;
+        }
+
+        .logo-link
+        {
+          margin-left: 4em; 
+        }
+
+        .welcome-text
+        {
+          margin-top: 6vh;
+          text-align: left;
+          width: 35%;
+        }   
+
+        .welcome-text h1
+        {
+          font-size: 48px;
+          line-height: 61px;
+        }  
+
+        .welcome-text p
+        {
+          font-size: 24px;
+          font-weight: 300;
+          line-height: 29px;
+        }   
+
+        .welcome-text .read-m
+        {
+          font-size: 18px;
+          line-height: 21px;
+        }   
+
+        .main-image img
+        {
+          width: 90%;
+          height: 70%;
+        }
+
+        .main-image
+        {
+          width: 65%;
+          align-items: flex-end;
+        }
+
+        .main-image .card
+        {
+          top: -96px;
+          right: 42px;
+          width: 410px;
+          height: 210px;
+
+        }
+
+        .d-name
+        {
+          font-size: 14px;
+          line-height: 17px;
+        }
+
+        .role
+        {
+          font-size: 12px
+          line-height: 15px;
+        }
+
+        .credits
+        {
+          margin-top: 20px;
+        }
+
+        .credits p
+        {
+          font-size: 24px;
+          line-height: 31px;
+        }
+
+        .profile img
+        {
+          width: 23%;
+        }
+
+        .line
+        {
+          display: none;
+        } 
+
+        li .active
+        {
+          font-weight: bold;
+        }
+
       }
     </style>
   </head>
@@ -147,10 +396,10 @@
         <a class="logo-link" href="index.html">this interior</a>
 
         <ul class="links">
-          <li><a href="#">n</a></li>
-          <li><a href="#">n</a></li>
-          <li><a href="#">n</a></li>
-          <li><a href="#">n</a></li>
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">Collection</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
         </ul>
 
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -161,19 +410,41 @@
     <div class="welcome">
       <div class="welcome-text">
         <h1>
-          Modern Interior
+          Modern interior
         </h1>
 
         <p>
           A full-Service residential & commercial interior design and staging company offering professional organizing & eco-services.
         </p>
 
-        <a class="read-m" href="#">Read more <i class="fas fa-arrow-right"></i></a>
+        <a class="read-m" href="#">Read more <span class="material-icons" style="line-height: unset; margin-left: 15px;">arrow_right_alt</span></a>
       </div>
 
       <div class="main-image">
         <img src="photo1.png">
+
+        <div class="card">
+          <div class="identifier">
+            <div class="profile">
+              <img src="photo2.png">
+            </div>
+            <div class="text-div">
+              <p class="dev-name">Aliza Webber</p>
+              <p class="role">Interior designer</p>
+            </div>
+          </div>
+          <div class="credits"><p>Designed in 2020 by Aliza Webber</p></div>
+        </div>
       </div>
+     
+        
     </div>
+     <div class="footer">
+        <div class="line"></div>
+
+        <footer>
+          Aymendz46 @ DevChallenges.io
+        </footer>
+      </div>
   </body>
 </html>
